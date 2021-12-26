@@ -1,14 +1,14 @@
 # Premiumize helper web extension
 
-* Adds context menu entry 'Add to Premiumize' on link elemements. 
-* Works on torrent links, file links, magnets links.
-* Shows latest transfers of your premimize acounts.
+* Adds context menu entry 'Add to Premiumize' on link elemements
+* Works on torrent links, file links, magnes links
+* Shows latest transfers of your premiuize acount
 
-Require you to be logged into premiumize account.
+Requires you to be logged into premiumize account.
 
 Extension build of based off `https://github.com/abhijithvijayan/web-extension-starter`
 
-## 🚀 Quick Start
+## Quick Start
 
 Ensure you have
 
