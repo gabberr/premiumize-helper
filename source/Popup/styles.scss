@@ -4,49 +4,52 @@
 
 body {
   color: $black;
+  font-family: $nunito;
   background-color: $greyWhite;
 }
+.text, a {
+  color: $black;
+}
+a:hover {
+  color: $skyBlue;
+}
 
+@media (prefers-color-scheme: dark) {
+  .text {
+    color: $blue;
+  }
+  a {
+    color: $blue;
+  }
+  body {
+    background-color: $grey;
+    color: $greyWhite;
+  }
+}
 
 #popup {
   min-width: 350px;
-  padding: 30px 20px;
-
-  h2 {
-    font-size: 25px;
-    text-align: center;
+  max-width: 40rem;
+  padding: 2rem 1rem;
+  h1 {
+    font-size: 1.25rem;
   }
-
-  #options__button {
-    width: 50%;
-    background: green;
-    color: white;
-    font-weight: 500;
-    border-radius: 15px;
-    padding: 5px 10px;
-    justify-content: center;
-    margin: 20px auto;
-    cursor: pointer;
-    opacity: 0.8;
-    display: flex;
+  .search {
+    margin-bottom: 0.5rem;
   }
-
-  .links__holder {
-    ul {
+  .message {
+    font-size: 80%;
+  }
+  .transfers {
+    li {
       display: flex;
-      margin-top: 1em;
-      justify-content: space-around;
-
-      li {
-        button {
-          border-radius: 25px;
-          font-size: 20px;
-          font-weight: 600;
-          padding: 10px 17px;
-          background-color: rgba(0, 0, 255, 0.7);
-          color: white;
-          cursor: pointer;
-        }
+      flex-direction: column;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 0.25rem 0;
+      overflow: hidden;
+      a {
+        margin-left: 0.25rem;
       }
     }
   }
